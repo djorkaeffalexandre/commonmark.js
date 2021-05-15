@@ -9093,7 +9093,7 @@
 
     var reCodeFence = /^`{3,}(?!.*`)|^~{3,}(?!.*~)/;
 
-    var reClosingCodeFence = /^(?:`{3,}|~{3,})(?= *$)/;
+    var reClosingCodeFence = /^(?:`{3,}|~{3,})(?= *$)/m;
 
     var reSetextHeadingLine = /^(?:=+|-+)[ \t]*$/;
 
