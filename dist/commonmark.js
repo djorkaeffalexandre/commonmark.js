@@ -9093,7 +9093,7 @@
 
     var reCodeFence = /^`{3,}(?!.*`)|^~{3,}(?!.*~)/;
 
-    var reClosingCodeFence = /^(?:`{3,}|~{3,})(?= *$)/;
+    var reClosingCodeFence = /^(?:`{3,}|~{3,})(?=( |\n)*$)/m;
 
     var reSetextHeadingLine = /^(?:=+|-+)[ \t]*$/;
 
@@ -10505,7 +10505,6 @@
                     if (node.size.width) {
                       this.lit('" width="' + node.size.width);
                     }
-            
                     if (node.size.height) {
                       this.lit('" height="' + node.size.height);
                     }
